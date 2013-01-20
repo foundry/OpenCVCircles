@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB3B425E1694B64A00A78685 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3B425D1694B64A00A78685 /* UIKit.framework */; };
+		AB3B42601694B64A00A78685 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3B425F1694B64A00A78685 /* Foundation.framework */; };
+		AB3B42621694B64A00A78685 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3B42611694B64A00A78685 /* CoreGraphics.framework */; };
+		AB3B42841694B6C500A78685 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3B42831694B6C500A78685 /* opencv2.framework */; };
+		AB3B42861694B6D900A78685 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3B42851694B6D900A78685 /* libz.dylib */; };
+		AB3B428C1694B71C00A78685 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3B428B1694B71C00A78685 /* CoreMedia.framework */; };
+		AB3B428E1694B72400A78685 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3B428D1694B72400A78685 /* CoreVideo.framework */; };
+		AB3B42901694B72D00A78685 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3B428F1694B72D00A78685 /* AVFoundation.framework */; };
+		AB3B42921694B73400A78685 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3B42911694B73400A78685 /* ImageIO.framework */; };
+		AB3B42A71694BA9500A78685 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = AB3B42A61694BA9500A78685 /* README.markdown */; };
+		AB85D6E116AB2CF3004BE472 /* CVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB85D6C916AB2CF3004BE472 /* CVAppDelegate.m */; };
+		AB85D6E316AB2CF3004BE472 /* CVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB85D6CD16AB2CF3004BE472 /* CVViewController.m */; };
+		AB85D6E416AB2CF3004BE472 /* CVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB85D6CF16AB2CF3004BE472 /* CVWrapper.mm */; };
+		AB85D6E516AB2CF3004BE472 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB85D6D016AB2CF3004BE472 /* Default-568h@2x.png */; };
+		AB85D6E616AB2CF3004BE472 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AB85D6D116AB2CF3004BE472 /* Default.png */; };
+		AB85D6E716AB2CF3004BE472 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB85D6D216AB2CF3004BE472 /* Default@2x.png */; };
+		AB85D6E816AB2CF3004BE472 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB85D6D316AB2CF3004BE472 /* InfoPlist.strings */; };
+		AB85D6E916AB2CF3004BE472 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB85D6D516AB2CF3004BE472 /* MainStoryboard_iPad.storyboard */; };
+		AB85D6EA16AB2CF3004BE472 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB85D6D716AB2CF3004BE472 /* MainStoryboard_iPhone.storyboard */; };
+		AB85D6EB16AB2CF3004BE472 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB85D6D916AB2CF3004BE472 /* main.m */; };
+		AB85D6F016AB2CF3004BE472 /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB85D6E016AB2CF3004BE472 /* UIImage+OpenCV.mm */; };
+		AB85D6F716AB2E2E004BE472 /* CVCircles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB85D6F616AB2E2D004BE472 /* CVCircles.cpp */; };
+		ABA2C74316AB3A3800909163 /* circles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABA2C74116AB3A3800909163 /* circles.jpg */; };
+		ABA2C74416AB3A3800909163 /* circles2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABA2C74216AB3A3800909163 /* circles2.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AB3B42591694B64A00A78685 /* OpenCVCircles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenCVCircles.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB3B425D1694B64A00A78685 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AB3B425F1694B64A00A78685 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AB3B42611694B64A00A78685 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AB3B42831694B6C500A78685 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		AB3B42851694B6D900A78685 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		AB3B428B1694B71C00A78685 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		AB3B428D1694B72400A78685 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		AB3B428F1694B72D00A78685 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		AB3B42911694B73400A78685 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		AB3B42A61694BA9500A78685 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
+		AB85D6C816AB2CF3004BE472 /* CVAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVAppDelegate.h; sourceTree = "<group>"; };
+		AB85D6C916AB2CF3004BE472 /* CVAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVAppDelegate.m; sourceTree = "<group>"; };
+		AB85D6CC16AB2CF3004BE472 /* CVViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVViewController.h; sourceTree = "<group>"; };
+		AB85D6CD16AB2CF3004BE472 /* CVViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVViewController.m; sourceTree = "<group>"; };
+		AB85D6CE16AB2CF3004BE472 /* CVWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVWrapper.h; sourceTree = "<group>"; };
+		AB85D6CF16AB2CF3004BE472 /* CVWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CVWrapper.mm; sourceTree = "<group>"; };
+		AB85D6D016AB2CF3004BE472 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AB85D6D116AB2CF3004BE472 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		AB85D6D216AB2CF3004BE472 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		AB85D6D416AB2CF3004BE472 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AB85D6D616AB2CF3004BE472 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		AB85D6D816AB2CF3004BE472 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		AB85D6D916AB2CF3004BE472 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AB85D6DA16AB2CF3004BE472 /* OpenCVCircles-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "OpenCVCircles-Info.plist"; sourceTree = "<group>"; };
+		AB85D6DB16AB2CF3004BE472 /* OpenCVCircles-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OpenCVCircles-Prefix.pch"; sourceTree = "<group>"; };
+		AB85D6DF16AB2CF3004BE472 /* UIImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OpenCV.h"; sourceTree = "<group>"; };
+		AB85D6E016AB2CF3004BE472 /* UIImage+OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+OpenCV.mm"; sourceTree = "<group>"; };
+		AB85D6F616AB2E2D004BE472 /* CVCircles.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVCircles.cpp; sourceTree = "<group>"; };
+		AB85D6F816AB2F04004BE472 /* CVCircles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVCircles.h; sourceTree = "<group>"; };
+		ABA2C74116AB3A3800909163 /* circles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = circles.jpg; sourceTree = "<group>"; };
+		ABA2C74216AB3A3800909163 /* circles2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = circles2.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB3B42561694B64A00A78685 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB3B42901694B72D00A78685 /* AVFoundation.framework in Frameworks */,
+				AB3B428E1694B72400A78685 /* CoreVideo.framework in Frameworks */,
+				AB3B428C1694B71C00A78685 /* CoreMedia.framework in Frameworks */,
+				AB3B42921694B73400A78685 /* ImageIO.framework in Frameworks */,
+				AB3B425E1694B64A00A78685 /* UIKit.framework in Frameworks */,
+				AB3B42601694B64A00A78685 /* Foundation.framework in Frameworks */,
+				AB3B42621694B64A00A78685 /* CoreGraphics.framework in Frameworks */,
+				AB3B42841694B6C500A78685 /* opencv2.framework in Frameworks */,
+				AB3B42861694B6D900A78685 /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB3B424E1694B64A00A78685 = {
+			isa = PBXGroup;
+			children = (
+				AB3B42A61694BA9500A78685 /* README.markdown */,
+				AB85D6C716AB2CF3004BE472 /* OpenCVCircles */,
+				AB3B425C1694B64A00A78685 /* Frameworks */,
+				AB3B425A1694B64A00A78685 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB3B425A1694B64A00A78685 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB3B42591694B64A00A78685 /* OpenCVCircles.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB3B425C1694B64A00A78685 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB3B42911694B73400A78685 /* ImageIO.framework */,
+				AB3B428F1694B72D00A78685 /* AVFoundation.framework */,
+				AB3B428D1694B72400A78685 /* CoreVideo.framework */,
+				AB3B428B1694B71C00A78685 /* CoreMedia.framework */,
+				AB3B42851694B6D900A78685 /* libz.dylib */,
+				AB3B42831694B6C500A78685 /* opencv2.framework */,
+				AB3B425D1694B64A00A78685 /* UIKit.framework */,
+				AB3B425F1694B64A00A78685 /* Foundation.framework */,
+				AB3B42611694B64A00A78685 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB85D6C716AB2CF3004BE472 /* OpenCVCircles */ = {
+			isa = PBXGroup;
+			children = (
+				AB85D6F416AB2D7C004BE472 /* assets */,
+				AB85D6F316AB2D74004BE472 /* UI */,
+				AB85D6F216AB2D6D004BE472 /* cpp */,
+				AB85D6F116AB2D4C004BE472 /* Supporting files */,
+				AB85D6C816AB2CF3004BE472 /* CVAppDelegate.h */,
+				AB85D6C916AB2CF3004BE472 /* CVAppDelegate.m */,
+				AB85D6CC16AB2CF3004BE472 /* CVViewController.h */,
+				AB85D6CD16AB2CF3004BE472 /* CVViewController.m */,
+			);
+			path = OpenCVCircles;
+			sourceTree = "<group>";
+		};
+		AB85D6F116AB2D4C004BE472 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				AB85D6D916AB2CF3004BE472 /* main.m */,
+				AB85D6D316AB2CF3004BE472 /* InfoPlist.strings */,
+				AB85D6DA16AB2CF3004BE472 /* OpenCVCircles-Info.plist */,
+				AB85D6DB16AB2CF3004BE472 /* OpenCVCircles-Prefix.pch */,
+			);
+			name = "Supporting files";
+			sourceTree = "<group>";
+		};
+		AB85D6F216AB2D6D004BE472 /* cpp */ = {
+			isa = PBXGroup;
+			children = (
+				AB85D6F816AB2F04004BE472 /* CVCircles.h */,
+				AB85D6F616AB2E2D004BE472 /* CVCircles.cpp */,
+				AB85D6CE16AB2CF3004BE472 /* CVWrapper.h */,
+				AB85D6CF16AB2CF3004BE472 /* CVWrapper.mm */,
+				AB85D6DF16AB2CF3004BE472 /* UIImage+OpenCV.h */,
+				AB85D6E016AB2CF3004BE472 /* UIImage+OpenCV.mm */,
+			);
+			name = cpp;
+			sourceTree = "<group>";
+		};
+		AB85D6F316AB2D74004BE472 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				AB85D6D516AB2CF3004BE472 /* MainStoryboard_iPad.storyboard */,
+				AB85D6D716AB2CF3004BE472 /* MainStoryboard_iPhone.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		AB85D6F416AB2D7C004BE472 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				ABA2C74116AB3A3800909163 /* circles.jpg */,
+				ABA2C74216AB3A3800909163 /* circles2.jpg */,
+				AB85D6D016AB2CF3004BE472 /* Default-568h@2x.png */,
+				AB85D6D116AB2CF3004BE472 /* Default.png */,
+				AB85D6D216AB2CF3004BE472 /* Default@2x.png */,
+			);
+			name = assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB3B42581694B64A00A78685 /* OpenCVCircles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB3B42801694B64B00A78685 /* Build configuration list for PBXNativeTarget "OpenCVCircles" */;
+			buildPhases = (
+				AB3B42551694B64A00A78685 /* Sources */,
+				AB3B42561694B64A00A78685 /* Frameworks */,
+				AB3B42571694B64A00A78685 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenCVCircles;
+			productName = CVOpenTemplate;
+			productReference = AB3B42591694B64A00A78685 /* OpenCVCircles.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB3B42501694B64A00A78685 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CV;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = foundry;
+			};
+			buildConfigurationList = AB3B42531694B64A00A78685 /* Build configuration list for PBXProject "OpenCVCircles" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AB3B424E1694B64A00A78685;
+			productRefGroup = AB3B425A1694B64A00A78685 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB3B42581694B64A00A78685 /* OpenCVCircles */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB3B42571694B64A00A78685 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB3B42A71694BA9500A78685 /* README.markdown in Resources */,
+				AB85D6E516AB2CF3004BE472 /* Default-568h@2x.png in Resources */,
+				AB85D6E616AB2CF3004BE472 /* Default.png in Resources */,
+				AB85D6E716AB2CF3004BE472 /* Default@2x.png in Resources */,
+				AB85D6E816AB2CF3004BE472 /* InfoPlist.strings in Resources */,
+				AB85D6E916AB2CF3004BE472 /* MainStoryboard_iPad.storyboard in Resources */,
+				AB85D6EA16AB2CF3004BE472 /* MainStoryboard_iPhone.storyboard in Resources */,
+				ABA2C74316AB3A3800909163 /* circles.jpg in Resources */,
+				ABA2C74416AB3A3800909163 /* circles2.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB3B42551694B64A00A78685 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB85D6E116AB2CF3004BE472 /* CVAppDelegate.m in Sources */,
+				AB85D6E316AB2CF3004BE472 /* CVViewController.m in Sources */,
+				AB85D6E416AB2CF3004BE472 /* CVWrapper.mm in Sources */,
+				AB85D6EB16AB2CF3004BE472 /* main.m in Sources */,
+				AB85D6F016AB2CF3004BE472 /* UIImage+OpenCV.mm in Sources */,
+				AB85D6F716AB2E2E004BE472 /* CVCircles.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AB85D6D316AB2CF3004BE472 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB85D6D416AB2CF3004BE472 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AB85D6D516AB2CF3004BE472 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB85D6D616AB2CF3004BE472 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		AB85D6D716AB2CF3004BE472 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB85D6D816AB2CF3004BE472 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB3B427E1694B64B00A78685 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB3B427F1694B64B00A78685 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB3B42811694B64B00A78685 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenCVCircles/OpenCVCircles-Prefix.pch";
+				INFOPLIST_FILE = "OpenCVCircles/OpenCVCircles-Info.plist";
+				PRODUCT_NAME = OpenCVCircles;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AB3B42821694B64B00A78685 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenCVCircles/OpenCVCircles-Prefix.pch";
+				INFOPLIST_FILE = "OpenCVCircles/OpenCVCircles-Info.plist";
+				PRODUCT_NAME = OpenCVCircles;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB3B42531694B64A00A78685 /* Build configuration list for PBXProject "OpenCVCircles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB3B427E1694B64B00A78685 /* Debug */,
+				AB3B427F1694B64B00A78685 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB3B42801694B64B00A78685 /* Build configuration list for PBXNativeTarget "OpenCVCircles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB3B42811694B64B00A78685 /* Debug */,
+				AB3B42821694B64B00A78685 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB3B42501694B64A00A78685 /* Project object */;
+}
