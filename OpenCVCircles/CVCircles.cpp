@@ -28,10 +28,22 @@ cv::Mat CVCircles::detectedCirclesInImage
         cout << "can not open image " << endl;
         return img;
         }
+    
     Mat cimg;
+
+    if (img.type()==CV_8UC1) {
+        cvtColor(img, cimg, CV_GRAY2RGB);
+
+            //image is grayscale
+    } else {
+        cimg = img;
+        cvtColor(img, img, CV_RGB2GRAY);
+            //image is color
+    }
+    
     medianBlur(img, img, 5);
 
-    cvtColor(img, cimg, CV_GRAY2RGB);
+        //   cvtColor(img, cimg, CV_GRAY2RGB);
     
     vector<Vec3f> circles;
     HoughCircles(  img      //InputArray 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB1D3ECF16B732D20032A490 /* board.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB1D3ECE16B732D20032A490 /* board.jpg */; };
 		AB3B425E1694B64A00A78685 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3B425D1694B64A00A78685 /* UIKit.framework */; };
 		AB3B42601694B64A00A78685 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3B425F1694B64A00A78685 /* Foundation.framework */; };
 		AB3B42621694B64A00A78685 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3B42611694B64A00A78685 /* CoreGraphics.framework */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB1D3ECE16B732D20032A490 /* board.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = board.jpg; sourceTree = "<group>"; };
 		AB3B42591694B64A00A78685 /* OpenCVCircles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenCVCircles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB3B425D1694B64A00A78685 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AB3B425F1694B64A00A78685 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -173,6 +175,7 @@
 		AB85D6F416AB2D7C004BE472 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				AB1D3ECE16B732D20032A490 /* board.jpg */,
 				ABA2C74116AB3A3800909163 /* circles.jpg */,
 				ABA2C74216AB3A3800909163 /* circles2.jpg */,
 				AB85D6D016AB2CF3004BE472 /* Default-568h@2x.png */,
@@ -243,6 +246,7 @@
 				AB85D6EA16AB2CF3004BE472 /* MainStoryboard_iPhone.storyboard in Resources */,
 				ABA2C74316AB3A3800909163 /* circles.jpg in Resources */,
 				ABA2C74416AB3A3800909163 /* circles2.jpg in Resources */,
+				AB1D3ECF16B732D20032A490 /* board.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

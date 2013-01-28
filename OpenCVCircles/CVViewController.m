@@ -15,6 +15,10 @@
 #import "CVViewController.h"
 #import "CVWrapper.h"
 
+#define IMAGE @"board.jpg"
+    //#define IMAGE @"circles.jpg"
+    //#define IMAGE @"circles.jpg"
+
 @interface CVViewController ()
 @property (nonatomic, strong) UIImage* image;
 @end
@@ -224,7 +228,7 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    self.image = [UIImage imageNamed:@"circles2.jpg"];
+    self.image = [UIImage imageNamed:IMAGE];
     self.imageView.image = self.image;
     [super viewWillAppear:animated];
     [self adjustThreshold];

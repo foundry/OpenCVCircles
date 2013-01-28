@@ -92,7 +92,7 @@ return [[self class] detectedCirclesInImage:image
 {
     
     UIImage* result = nil;
-    cv::Mat matImage = [image CVGrayscaleMat];
+    cv::Mat matImage = [image CVMat];
     matImage = CVCircles::detectedCirclesInImage
     (matImage,  dp,  minDist, param1, param2, min_radius, max_radius);
     result = [UIImage imageWithCVMat:matImage];
